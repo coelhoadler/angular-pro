@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@angular-pro-class/orders": ["modules/orders/src/index.ts"],
       "@angular-pro-class/products": ["modules/products/src/index.ts"]
     }
   },
