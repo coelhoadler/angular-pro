@@ -1,1 +1,15 @@
 <p>products works!</p>
+<input type="search" name="name" id="name" [formControl]="control">
+<button (click)="search()">Pesquisar</button>
+
+<ul>
+    <li *ngFor="let product of products$ | async">{{ product.name }}</li>
+</ul>
+
+<hr> <h1>Nova forma (Angular 17)</h1>
+
+<ul>
+    @for (product of products$ | async; track product.name) {
+    <li>{{ product.name }}</li>
+    }
+</ul>

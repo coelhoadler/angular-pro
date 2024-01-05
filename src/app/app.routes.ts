@@ -10,5 +10,9 @@ export const appRoutes: Route[] = [
     {
         path: 'products',
         loadComponent: () => import('@angular-pro-class/products').then(c => c.ProductsComponent)
+    },
+    {
+        path: 'orders',
+        loadComponent: () => import('@angular-pro-class/orders').then(c => c.OrdersComponent)
     }
 ];
